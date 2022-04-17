@@ -33,27 +33,26 @@ public class inputExample extends Application{
 		TextField us = new TextField();
 		TextField ps = new TextField();
 		
-		String userInput = us.getText();
-		String passwordInput = ps.getText();
+		
 		
 		String user = "a";
 		String pass = "a";
 		
 		Button b = new Button("Sign in");
-		
 		final Text actiontarget = new Text();
 		b.setOnAction(new EventHandler<ActionEvent>() {
 			
 			@Override
 			 public void handle(ActionEvent e) {
-				
+				String userInput = us.getText();
+				String passwordInput = ps.getText();
 				if(userInput.equals(user) && passwordInput.equals(pass)) {
-					actiontarget.setFill(Color.AQUA);
-				 	actiontarget.setText("Signed in Succefully");
+					actiontarget.setFill(Color.GREEN);
+				 	actiontarget.setText("Hello "+userInput+" your signed in Succefully!");
 				}
 				else {
 					actiontarget.setFill(Color.FIREBRICK);
-				 	actiontarget.setText("Check your log in info");
+				 	actiontarget.setText("Check your log in info!");
 				}
 			 }
 			});
