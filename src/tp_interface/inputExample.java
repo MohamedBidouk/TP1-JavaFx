@@ -35,8 +35,8 @@ public class inputExample extends Application{
 		
 		
 		
-		String user = "a";
-		String pass = "a";
+		String user = "Mdm Safa";
+		String pass = "Majdoub";
 		
 		Button b = new Button("Sign in");
 		final Text actiontarget = new Text();
@@ -68,7 +68,7 @@ public class inputExample extends Application{
 		root.add(actiontarget, 1, 6);
 
 		
-		Scene scene = new Scene(root, 500,450);
+		Scene scene = new Scene(root, 300,250);
 		
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("Welcome back");
